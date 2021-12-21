@@ -1,0 +1,16 @@
+---
+location: local4
+domain: mgmt.local4.iaas.intern
+himlar_repo: https://github.com/eb4x/himlar.git
+himlar_ref: local4
+
+himlar_update_secrets: false
+secret_files:
+  ca-cert:
+    path:  '/etc/pki/tls/certs/cachain.pem'
+    mode:  '0644'
+    owner: 'root'
+    group: 'root'
+
+provisioning_bridge: br-provision
+openstack_bridge: br-openstack
